@@ -6,7 +6,7 @@ get partial code AST and convert AST node type to text
 * how to write gremlin query to visit AST tree stored in Neo4j
 * how to convert AST to Text
 
-## data source
+## Data source
 * If you want using Stackoverflow Q&A data, you don't need to write a Crawler,
 Stackoverflow has dump all his data and publish it ,you can find here:
 https://archive.org/details/stackexchange
@@ -24,7 +24,7 @@ https://github.com/octopus-platform/joern
 * If you want to know about how to install and use Joern, read this:
 http://joern.readthedocs.io/en/latest/
 
-###tips for install Joern
+### Tips for install Joern
 If you follow official guide strictly, you may still encounter some problems, so make
 sure the following steps:
 1. java version ,better 1.8
@@ -35,7 +35,7 @@ sure the following steps:
 4. When istalling gremlin-plugin, you need do mvn clean package, if error occurs,
    you should change all of  the license file data to 2017
 
-### tips for using Joern
+### Tips for using Joern
 1. Import your code correctly, following this:
     http://joern.readthedocs.io/en/latest/tutorials/unixStyleCodeAnalysis.html#importing-the-code
 2. When you need to start Neo4j, using this command in case of error:
@@ -43,11 +43,11 @@ sure the following steps:
 3. rm .joernIndex dir before doing a new import
 4. you can't update Neo4j when it's on running, you need to close it first
 
-## file introduce
+## File introduce
 1. code_info  some file of types/keyword of different language
 2. extrac_code_from_StackOverflow  java code to get question and it's answers from database
 3. code_clean_utils.py  tools to do cleaning for code and text
 4. get_AST_type_joern.py  gremlin query to get AST node type from Neo4j
 5. stackoverflow_data_clean.py get training and testing dataset
 
-### if you think this project may helpful, may you give me a star? :)
+### If you think this project may helpful, may you give me a star? :)
